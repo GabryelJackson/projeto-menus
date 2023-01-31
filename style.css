@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav-bg-color: #3c363b;
+    --nav-text-color: #f9ebf2;
+    --button-bg-color: #268fbe;
+    --button-text-color: #f9ebf2;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--nav-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+p {
+    padding: 50px;
+    text-align: center;
+    color: var(--button-bg-color);
+}
+
+@keyframes seta {
+    from {
+        top: 30px;
+    }
+    to {
+        top: 20px;
+    }
+}
+
+p::after {
+    content: '☝';
+    position: relative;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.4);
+    animation: seta .5s ease-in 0s infinite alternate;
+}
+
+.button  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.6rem;
+    background: var(--button-bg-color);
+    border-radius: .8rem;
+    color: var(--button-text-color);
+}
+
+/* NAV 1*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    height: 60px;
+    padding: 0px 24px;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* NAV 2 */
+
+.menu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    height: 60px;
+    padding: 0px 24px;
+}
+
+.lista2 {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+/* NAV 3 */
+
+.menu3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    height: 60px;
+    padding: 0px 24px;
+}
+
+.lista3 {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
